@@ -13,7 +13,7 @@ body{
 }
 						/* Encabezado */
 
-#encabezado-de-la-pagina-principal {
+#encabezado-de-la-pagina-principal{
     background-color: #000;
     height: 60px; /* Ajusta la altura según tus preferencias */
     display: flex;
@@ -22,7 +22,16 @@ body{
     overflow: hidden; /* Oculta cualquier contenido que exceda la altura del encabezado */
 }
 
-#encabezado-de-la-pagina-principal .Logo-CodevaMP{
+#listadoDeObjetos{
+  display: flex;
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Logo-CodevaMP{
 	max-width: 60px;
 	max-height: 60px;
 	min-width: 60px;
@@ -31,12 +40,14 @@ body{
 	width: auto;
 }
 
-#encabezado-de-la-pagina-principal .Logo-CodevaMP img {
+.Logo-CodevaMP img {
     max-width: 100%;
     max-height: 100%;
     height: auto;
     width: auto;
 }
+
+
 
 						/* barra de busqueda */
 
@@ -44,14 +55,14 @@ body{
 	margin-right: 20px;
 }
 
-#encabezado-de-la-pagina-principal #barra-de-busqueda .barra-de-busqueda button {
+.barra-de-busqueda button {
     border: none;
     background: none;
     color: #8b8ba7;
 }
 
 /* estilo del contenedor de la barra de busqueda */
-#encabezado-de-la-pagina-principal #barra-de-busqueda .barra-de-busqueda {
+.barra-de-busqueda {
     --timing: 0.3s;
     --width-of-input: 200px;
     --height-of-input: 100%;
@@ -86,7 +97,7 @@ body{
 }
 
 /* animacion del borde del input */
-#encabezado-de-la-pagina-principal #barra-de-busqueda .barra-de-busqueda:before {
+.barra-de-busqueda:before {
     content: "";
     position: absolute;
     background: var(--border-color);
@@ -101,7 +112,7 @@ body{
 }
 
 /* redondeo de las esquinas del input */
-#encabezado-de-la-pagina-principal #barra-de-busqueda .barra-de-busqueda:focus-within {
+.barra-de-busqueda:focus-within {
     border-radius: var(--after-border-radius);
 }
 
@@ -110,7 +121,7 @@ input:focus {
 }
 
 /* animacion del borde del input */
-#encabezado-de-la-pagina-principal #barra-de-busqueda .barra-de-busqueda:focus-within:before {
+.barra-de-busqueda:focus-within:before {
     transform: scale(1);
 }
 
@@ -129,7 +140,7 @@ input:not(:placeholder-shown) ~ .reset {
 }
 
 /* tamaño de lupa */
-#encabezado-de-la-pagina-principal #barra-de-busqueda .barra-de-busqueda svg {
+.barra-de-busqueda svg {
     width: 17px;
     margin-top: 3px;
 }
